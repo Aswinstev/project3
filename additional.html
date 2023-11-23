@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Andrew Einarsen Experiments</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+
+
+    </head>
+    <body>
+        
+
+
+        <header>
+          <div class="nav">
+              <input type="checkbox" id="nav-check">
+              <div class="nav-header">
+                <div class="nav-title">
+                  Andrew Einarsen
+                </div>
+              </div>
+              <div class="nav-btn">
+                <label for="nav-check">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
+              </div>
+              
+              <div class="nav-links">
+                <a href="./index.html#projects" target="">Projects</a>
+                <a href="./index.html#about" target="">About me</a>
+                <a href="./index.html#contact" target="">Contact me</a>
+                <a href="./information.html" target="">Information</a>
+                <a href="./additional.html" target="">Additional</a>
+              </div>
+          </div>
+      </header>
+
+      <section id="additional">
+        <h2 class="heading" id="additional"><span>Additional</span></h2>
+    </section>
+
+
+        <div id="contenedor">
+            <figure>
+              <div id="separador"></div>
+            </figure>
+            <input oninput="beforeAfter()" onchange="beforeAfter()" type="range" min="0" max="100" value="50" id="deslizador" />
+        </div>
+
+        <!-- additional videos section -->
+        <div class="video-additional-section">
+          <div class="archviz-and-ani">
+              <iframe class="responsive-iframe-and" frameBorder="0" width="560" height="315"
+              src="https://www.youtube.com/embed/LMcKwZH2etk">
+              </iframe>
+              <iframe class="responsive-iframe-and" frameBorder="0" width="560" height="315"
+              src="https://www.youtube.com/embed/i3CZct6LmPI">
+              </iframe>
+              <iframe class="responsive-iframe-and" frameBorder="0" width="560" height="315"
+              src="https://www.youtube.com/embed/zRUCIa43OXo">
+              </iframe>
+              <iframe class="responsive-iframe-and" frameBorder="0" width="560" height="315"
+              src="https://www.youtube.com/embed/GqBCCCBU3BQ">
+              </iframe>
+          </div>
+        </div>
+
+        </div>
+        <!-- unlimited gallery -->
+
+        <div class="additional_gallery_container">
+          <div class="full-img" id="fullImgBox">
+            <img src="Memories 0.jpg" id="fullImg">
+            <span onclick="closeFullImg()">✖</span>
+          </div>
+            <div class="img-gallery">
+                <img src="./src/projects/additional/Bedroom.png" onclick="openFullImg(this.src)">
+                <img src="./src/projects/additional/Front Render.png" onclick="openFullImg(this.src)">
+                <img src="./src/projects/additional/Kitchen.png" onclick="openFullImg(this.src)">
+                <img src="./src/projects/additional/Lounge.png" onclick="openFullImg(this.src)">
+                <img src="./src/projects/additional/Rear Render.png" onclick="openFullImg(this.src)">
+                <img src="./src/projects/additional/Wide Angle.png" onclick="openFullImg(this.src)">
+                <img src="./src/projects/additional/Skylight-sketch.png" onclick="openFullImg(this.src)">
+                <img src="./src/projects/additional/Asset (4).png" onclick="openFullImg(this.src)">
+                <img src="./src/projects/additional/Chair Render.png" onclick="openFullImg(this.src)">
+                <img src="./src/projects/additional/Asset (1).png" onclick="openFullImg(this.src)">
+                <img src="./src/projects/additional/Asset (2).png" onclick="openFullImg(this.src)">
+                <img src="./src/projects/additional/Asset (3).png" onclick="openFullImg(this.src)">
+              </div>
+        </div>
+      </div>
+
+        </div>
+
+        
+          <model-viewer src="./src/projects/additional/model.glb" 
+          id="reveal" loading="eager" camera-controls touch-action="pan-y" auto-rotate poster="./src/projects/additional/poster.webp"
+                            ar ar-modes="webxr scene-viewer quick-look" 
+                            camera-controls poster="poster.webp" 
+                            shadow-intensity="1.6" 
+                            environment-image="legacy" 
+                            shadow-softness="0.81" 
+                            camera-orbit="317.1deg 63.08deg 45.56m" 
+                            field-of-view="22.98deg">
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
+            <div id="ar-prompt">
+                <img src="./src/projects/additional/ar_hand_prompt.png">
+            </div>
+          </model-viewer>
+        
+
+        <script src="./script.js"></script>
+        <script src="./index.js"></script>
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+
+
+    </body>
+</html>
+
